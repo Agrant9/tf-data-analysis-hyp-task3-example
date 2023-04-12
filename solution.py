@@ -9,5 +9,5 @@ def solution(x: np.array, y: np.array) -> bool: # Одна или две выб�
     # Измените код этой функции
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
-    stat, pval = stats.ks_2samp(x, y, alternative='less')
+    stat, pval = ks_2samp(x, y, alternative='less')
     return True if pval < 0.07 else False # Ваш ответ, True или False
